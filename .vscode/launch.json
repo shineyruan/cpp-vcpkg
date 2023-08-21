@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "name": "Debug Launch Test (CodeLLDB)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/bin/placeholder",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "preLaunchTask": "debug_build_vcpkg"
+    }
+  ],
+  "version": "2.0.0"
+}

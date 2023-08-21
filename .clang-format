@@ -1,0 +1,4 @@
+BasedOnStyle: Google
+UseTab: Never
+ColumnLimit: 80
+AlignConsecutiveMacros: true
