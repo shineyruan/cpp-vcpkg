@@ -2,6 +2,14 @@
 
 Template for creating a CMake/C++ project with Vcpkg management tool.
 
+This template has the following features:
+
+- CMake & Vcpkg support
+- Github Actions CI integration
+- [`spdlog`](https://github.com/gabime/spdlog) support for logging
+- [`pre-commit.ci`](https://pre-commit.com/) integration for C++/Markdown format & linting
+- Vscode debug configuration support
+
 ## Usage
 
 Use this repository as a template following the [Github template repository guideline](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
