@@ -11,27 +11,27 @@
 
 namespace std {
 
-ostream &operator<<(ostream &o, const std::vector<int> &arr);
-ostream &operator<<(ostream &o, const std::vector<float> &arr);
-ostream &operator<<(ostream &o, const std::vector<double> &arr);
-ostream &operator<<(ostream &o, const std::vector<std::string> &arr);
-ostream &operator<<(ostream &o, const std::vector<char> &arr);
+ostream& operator<<(ostream& o, const std::vector<int>& arr);
+ostream& operator<<(ostream& o, const std::vector<float>& arr);
+ostream& operator<<(ostream& o, const std::vector<double>& arr);
+ostream& operator<<(ostream& o, const std::vector<std::string>& arr);
+ostream& operator<<(ostream& o, const std::vector<char>& arr);
 
-ostream &operator<<(ostream &o, const std::unordered_set<std::string> &arr);
+ostream& operator<<(ostream& o, const std::unordered_set<std::string>& arr);
 
 template <typename T>
-ostream &operator<<(ostream &o, const std::vector<std::vector<T>> &arr) {
+ostream& operator<<(ostream& o, const std::vector<std::vector<T>>& arr) {
   o << "\n";
-  for (const auto &vec : arr) {
+  for (const auto& vec : arr) {
     o << vec << "\n";
   }
   return o;
 }
 
 template <typename T1, typename T2>
-ostream &operator<<(ostream &o, const std::vector<std::pair<T1, T2>> &arr) {
+ostream& operator<<(ostream& o, const std::vector<std::pair<T1, T2>>& arr) {
   o << "[";
-  for (const auto &p : arr) {
+  for (const auto& p : arr) {
     o << fmt::format("[{},{}] ", p.first, p.second);
   }
   o << "\b]";
